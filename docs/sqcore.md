@@ -85,4 +85,4 @@ This function sets an option.
 
 This function loads a script immediately if `delay` is false and puts it in the loading queue if `delay` is true, and returns true on success and false on error.
 
-    SqCore.LoadScript("database.nut", false);v
+    SqCore.LoadScript("database.nut", false);
