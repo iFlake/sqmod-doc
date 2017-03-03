@@ -29,7 +29,7 @@ Change `[port]` to the port you want your server to run on.
 ## Setting up the plugin's configuration file
 
 ---
-For the SqMod plugin to work, it needs a configuration file. Create a `SqMod.ini` file and copy-paste the following contents into it (courtesy iSLC):
+For the SqMod plugin to work, it needs a configuration file. Create an `SqMod.ini` file and copy-paste the following contents into it (courtesy iSLC):
 
     # Squirrel options
     [Squirrel]
