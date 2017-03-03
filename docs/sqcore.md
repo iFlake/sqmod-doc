@@ -59,3 +59,30 @@ This function sets the plugin state.
 
     SqCore.SetState(0);
 
+## function SqCore.GetOption
+`string SqCore.GetOption(string name)`
+
+This function gets an option.
+
+    var option = SqCore.GetOption(optionname);
+
+## function SqCore.GetOptionOr
+`string SqCore.GetOptionOr(string name, string value)`
+
+This function gets an option if it exists, and sets it if it doesn't.
+
+    var option = SqCore.GetOption(optionname, value);
+
+## function SqCore.SetOption
+`null SqCore.SetOption(string name, string value)`
+
+This function sets an option.
+
+    SqCore.SetOption(name, value);
+
+## function SqCore.LoadScript
+`bool SqCore.LoadScript(string name, bool delay)`
+
+This function loads a script immediately if `delay` is false and puts it in the loading queue if `delay` is true, and returns true on success and false on error.
+
+    SqCore.LoadScript("database.nut", false);
