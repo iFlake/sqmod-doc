@@ -85,4 +85,4 @@ We have made our `SqMod.ini` file such that it loads `main.nut`. Create a file `
 ## Cleaning up
 
 ---
-By now, all your achives should be safe to clean up. You can now delete them.
+By now, all your archives should be safe to clean up. You can now delete them.
