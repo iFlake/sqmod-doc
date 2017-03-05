@@ -7,7 +7,7 @@ This guide will help you set up your environment so you can start with using the
 
 ---
 Firstly, you'll need the server itself. The server can be found [here](http://forum.vc-mp.org/?board=4.0).
-Next, you'll need to download the plugin. The plugin build can be found [here](http://dryback.xyz/sqmod/?dir=binaries).
+Next, you'll need to download the plugin. The plugin build can be found [here](http://dryback.xyz/sqmod/binaries/build_latest.7z).
 If you are on Windows, you will need an extra DLL if you wish to use MySQL. If you're on a 32-bit system, you'll need to use [this](http://dryback.xyz/sqmod/binaries/dependencies/win32/mysql_32.7z) DLL, and if you're on a 64-bit system, you'll need to use [this](http://dryback.xyz/sqmod/binaries/dependencies/win64/mysql_64.7z) DLL.
 
 ## Setting up the server
@@ -29,7 +29,7 @@ Change `[port]` to the port you want your server to run on.
 ## Setting up the plugin's configuration file
 
 ---
-For the SqMod plugin to work, it needs a configuration file. Create an `SqMod.ini` file and copy-paste the following contents into it (courtesy iSLC):
+For the SqMod plugin to work, it needs a configuration file. Create a `SqMod.ini` file and copy-paste the following contents into it (courtesy iSLC):
 
     # Squirrel options
     [Squirrel]
@@ -85,4 +85,4 @@ We have made our `SqMod.ini` file such that it loads `main.nut`. Create a file `
 ## Cleaning up
 
 ---
-By now, all your archives should be safe to clean up. You can now delete them.
+By now, all your achives should be safe to clean up. You can now delete them.
