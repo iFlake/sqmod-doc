@@ -20,16 +20,16 @@ This function returns `true` if the script is reloading and `false` if it isn't.
 ## SqCore.ReloadBecause
 `null SqCore.ReloadBecause(int header, object payload)`
 
-This function does something.
+This function reloads the script and sets the header and payload
 
-    SqCore.ReloadBecause(...);
+    SqCore.ReloadBecause(12, "Command");
 
 ## SqCore.SetReloadInfo
 `null SqCore.SetReloadInfo(int header, object payload)`
 
-This function does something.
+This function sets the reload header and payload while the script is being reloaded
 
-    SqCore.SetReloadInfo(...);
+    SqCore.SetReloadInfo(11, "Script update");
     
 ## SqCore.GetReloadHeader
 `int SqCore.GetReloadHeader()`
@@ -128,6 +128,48 @@ This function retrieves a player instance from its ID.
 This function retrieves a vehicle instance from its ID.
 
     local vehicle = SqCore.GetVehicle(12);
+
+## SqCore.DestroyBlip
+`bool DestroyBlip(int id, int header, object payload)`
+
+This function deletes the specified blip after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyBlip(12, 8, "Race complete");
+
+## SqCore.DestroyCheckpoint
+`bool DestroyCheckpoint(int id, int header, object payload)`
+
+This function deletes the specified checkpoint after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyCheckpoint(12, 8, "Race complete");
+
+## SqCore.DestroyKeybind
+`bool DestroyCheckpoint(int id, int header, object payload)`
+
+This function deletes the specified keybind after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyKeybind(12, 8, "Key pressed");
+
+## SqCore.DestroyObject
+`bool DestroyObject(int id, int header, object payload)`
+
+This function deletes the specified object after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyObject(12, 8, "Unstreamed");
+
+## SqCore.DestroyPickup
+`bool DestroyPickup(int id, int header, object payload)`
+
+This function deletes the specified pickup after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyPickup(12, 8, "Unstreamed");
+
+## SqCore.DestroyVehicle
+`bool DestroyVehicle(int id, int header, object payload)`
+
+This function deletes the specified vehicle after the current execution is complete, and specifies a header and payload for the current execution to use.
+
+    SqCore.DestroyVehicle(12, 8, "Owner left");
 
 ## SqCore.OnPreLoad
 `SqSignalImpl SqCore.OnPreLoad()`
